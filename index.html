@@ -226,7 +226,7 @@
 
     function connectWS() {
       const protocol = location.protocol === "https:" ? "wss:" : "ws:";
-      ws = new WebSocket(`${protocol}//138.185.133.121`);
+      ws = new WebSocket(`ws://138.185.133.121`);
       ws.binaryType = "arraybuffer";
 
       ws.onopen = () => {
