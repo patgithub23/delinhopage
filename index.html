@@ -226,7 +226,7 @@
 
     function connectWS() {
       const protocol = location.protocol === "https:" ? "wss:" : "ws:";
-      ws = new WebSocket(`${protocol}//biographies-bloggers-metallic-bruce.trycloudflare.com`);
+      ws = new WebSocket(`${protocol}//138.185.133.121`);
       ws.binaryType = "arraybuffer";
 
       ws.onopen = () => {
