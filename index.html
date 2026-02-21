@@ -226,7 +226,7 @@
 
     function connectWS() {
       const protocol = location.protocol === "https:" ? "wss:" : "ws:";
-      ws = new WebSocket(`ws://lists-visited-terminals-told.trycloudflare.com `);
+      ws = new WebSocket(`wss://lists-visited-terminals-told.trycloudflare.com `);
       ws.binaryType = "arraybuffer";
 
       ws.onopen = () => {
